@@ -9,10 +9,10 @@
   </tr>
   <tr>
     <th>Price</th>
-    <td><%= f.number_field(:price, step: :any) %></td>
+    <td><%= f.number_field(:price) %></td>
   </tr>
   <tr>
     <th>Published Date</th>
-    <td><%= f.datetime_field(:published_date) %></td>
+    <td><%= f.select :published_date, ['9/19/1967', '10/2/1980', '6/21/2002'] %></td>
   </tr>
 </table>
